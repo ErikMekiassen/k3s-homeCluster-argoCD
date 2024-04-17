@@ -1,4 +1,3 @@
-ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -q -N ""
 
 # Add Docker's official GPG key:
 sudo apt-get update -y
@@ -16,8 +15,10 @@ sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo docker run hello-world
 
+ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -q -N ""
+
 wget -NP . https://dokku.com/install/v0.34.4/bootstrap.sh
 sudo DOKKU_TAG=v0.34.4 bash bootstrap.sh
 cat ~/.ssh/authorized_keys | dokku ssh-keys:add admin
-dokku domains:set-global mekiassen.com # endre!
-dokku domains:set-global 192.168.1.111.sslip.io
+#dokku domains:set-global mekiassen.com # endre!
+dokku domains:set-global 192.168.56.20
