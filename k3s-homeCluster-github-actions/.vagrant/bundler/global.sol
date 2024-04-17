@@ -1,0 +1,1 @@
+{"dependencies":[["hitimes",[">= 0"]],["timers",["~> 4.0.1"]],["nio4r",[">= 1.1.0"]],["celluloid",["= 0.16.0"]],["celluloid-io",["= 0.16.2"]],["rubydns",["~> 1.0.2"]],["daemons",[">= 0"]],["vagrant-dns",["= 1.1.0"]]],"checksum":"7378a36e936c2fcb8422507158b38ada2a333f5613d3d8bed045ec6abc99f643","vagrant_version":"2.4.1"}
